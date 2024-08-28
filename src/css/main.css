@@ -16,8 +16,26 @@ body {
 	min-height: 100vh;
 	@apply font-Candara;
 	min-width: 1920px;
+	height: 100%;
 }
 
 .container {
 	@apply max-w-[1720px] mx-auto border-x border-[#FFFFFF1A];
+}
+
+.swiper-button-disabled {
+	opacity: 0.5;
+}
+
+.swiper-slide {
+	opacity: .5;
+}
+
+.swiper-slide-active {
+	opacity: 1;
+}
+
+main .container {
+	min-height: calc(100vh - 205px);
+	height: 100%;
 }
