@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+	font-family: 'Kudry';
+	src: url(../fonts/kudry-weird-headline.otf);
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+body {
+	background: url(../images/bg.png) no-repeat, #003D77;
+	background-size: cover;
+	min-height: 100vh;
+	@apply font-Candara;
+	min-width: 1920px;
+}
+
+.container {
+	@apply max-w-[1720px] mx-auto border-x border-[#FFFFFF1A];
+}

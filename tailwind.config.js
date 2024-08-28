@@ -2,7 +2,16 @@
 module.exports = {
 	content: ["./src/**/*.{html,js}"],
 	theme: {
-		extend: {},
+		extend: {
+			fontFamily: {
+				'Candara': ['"Candara"'],
+				'Inter': ['Inter'],
+				'Kudry': ['Kudry']
+			},
+			colors: {
+				'gray': '#D2CCBD',
+			}
+		},
 	},
 	plugins: [],
 }
