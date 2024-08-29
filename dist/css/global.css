@@ -588,6 +588,10 @@ video {
   }
 }
 
+.visible {
+  visibility: visible;
+}
+
 .collapse {
   visibility: collapse;
 }
@@ -644,6 +648,30 @@ video {
   top: 100%;
 }
 
+.top-\[\] {
+  top: ;
+}
+
+.right-\[13px\] {
+  right: 13px;
+}
+
+.top-\[13px\] {
+  top: 13px;
+}
+
+.right-\[-13px\] {
+  right: -13px;
+}
+
+.top-\[-13px\] {
+  top: -13px;
+}
+
+.top-\[0\] {
+  top: 0;
+}
+
 .-z-0 {
   z-index: 0;
 }
@@ -672,6 +700,11 @@ video {
   margin: 0px;
 }
 
+.mx-0 {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -691,6 +724,10 @@ video {
 
 .mb-\[171px\] {
   margin-bottom: 171px;
+}
+
+.mb-\[18px\] {
+  margin-bottom: 18px;
 }
 
 .mb-\[26px\] {
@@ -749,8 +786,24 @@ video {
   margin-top: 92px;
 }
 
-.mb-\[18px\] {
-  margin-bottom: 18px;
+.mt-\[13px\] {
+  margin-top: 13px;
+}
+
+.mt-\[-25px\] {
+  margin-top: -25px;
+}
+
+.mt-\[--45px\] {
+  margin-top: var(--45px);
+}
+
+.mt-\[-45px\] {
+  margin-top: -45px;
+}
+
+.mt-\[-\] {
+  margin-top: -;
 }
 
 .block {
@@ -779,6 +832,10 @@ video {
 
 .h-10 {
   height: 2.5rem;
+}
+
+.h-\[100px\] {
+  height: 100px;
 }
 
 .h-\[119px\] {
@@ -813,6 +870,14 @@ video {
   height: 35px;
 }
 
+.h-\[404px\] {
+  height: 404px;
+}
+
+.h-\[475px\] {
+  height: 475px;
+}
+
 .h-\[47px\] {
   height: 47px;
 }
@@ -823,6 +888,14 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-\[30px\] {
+  height: 30px;
+}
+
+.h-\[15px\] {
+  height: 15px;
 }
 
 .w-10 {
@@ -857,6 +930,14 @@ video {
   width: 400px;
 }
 
+.w-\[404px\] {
+  width: 404px;
+}
+
+.w-\[444px\] {
+  width: 444px;
+}
+
 .w-\[500px\] {
   width: 500px;
 }
@@ -865,16 +946,24 @@ video {
   width: 518px;
 }
 
-.w-\[573px\] {
-  width: 573px;
-}
-
 .w-\[80px\] {
   width: 80px;
 }
 
 .w-full {
   width: 100%;
+}
+
+.w-\[30px\] {
+  width: 30px;
+}
+
+.w-\[15px\] {
+  width: 15px;
+}
+
+.min-w-\[573px\] {
+  min-width: 573px;
 }
 
 .max-w-\[250px\] {
@@ -891,6 +980,10 @@ video {
 
 .max-w-\[557px\] {
   max-width: 557px;
+}
+
+.max-w-\[573px\] {
+  max-width: 573px;
 }
 
 .max-w-\[627px\] {
@@ -1047,8 +1140,16 @@ video {
   margin-bottom: calc(6px * var(--tw-space-y-reverse));
 }
 
+.overflow-visible {
+  overflow: visible;
+}
+
 .overflow-x-hidden {
   overflow-x: hidden;
+}
+
+.overflow-y-visible {
+  overflow-y: visible;
 }
 
 .rounded-\[4px\] {
@@ -1057,6 +1158,10 @@ video {
 
 .rounded-\[6px\] {
   border-radius: 6px;
+}
+
+.rounded-\[8px\] {
+  border-radius: 8px;
 }
 
 .rounded-full {
@@ -1140,6 +1245,11 @@ video {
 
 .bg-\[\#FFFFFF0D\] {
   background-color: #FFFFFF0D;
+}
+
+.bg-\[\#fafafa\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 250 250 / var(--tw-bg-opacity));
 }
 
 .bg-transparent {
@@ -1324,6 +1434,18 @@ video {
   padding-top: 9px;
 }
 
+.pt-\[13px\] {
+  padding-top: 13px;
+}
+
+.pt-\[\] {
+  padding-top: ;
+}
+
+.pt-\[45px\] {
+  padding-top: 45px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1487,6 +1609,11 @@ video {
   color: #FFFFFFCC;
 }
 
+.text-\[\#acacac\] {
+  --tw-text-opacity: 1;
+  color: rgb(172 172 172 / var(--tw-text-opacity));
+}
+
 .text-charcoal {
   --tw-text-opacity: 1;
   color: rgb(61 61 61 / var(--tw-text-opacity));
@@ -1505,29 +1632,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\#a5a5a5\] {
-  --tw-text-opacity: 1;
-  color: rgb(165 165 165 / var(--tw-text-opacity));
-}
-
-.text-\[charcoal\] {
-  color: charcoal;
-}
-
-.text-\[\] {
-  color: ;
-}
-
-.text-\[\#616161\] {
-  --tw-text-opacity: 1;
-  color: rgb(97 97 97 / var(--tw-text-opacity));
-}
-
-.text-\[\#acacac\] {
-  --tw-text-opacity: 1;
-  color: rgb(172 172 172 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -1782,9 +1886,21 @@ input[type="range"] {
   width: fit-content;
 }
 
-.secondary-btn:hover{
+.secondary-btn:hover {
   background: #46A358;
   color: white;
+}
+
+.product-thumb-swiper .swiper-slide {
+  border: 1px solid transparent;
+  width: calc(100px - 2px);
+  transition: all .2s linear;
+}
+
+.product-thumb-swiper .swiper-slide-thumb-active {
+  border-color: #46A358;
+  box-sizing: border-box;
+  border-radius: 0;
 }
 
 .hover\:border-\[\#46A358\]:hover {

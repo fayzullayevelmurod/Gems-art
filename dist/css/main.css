@@ -182,7 +182,20 @@ input[type="range"] {
 	transition: all .3s ease-in-out;
 	width: fit-content;
 }
-.secondary-btn:hover{ 
+
+.secondary-btn:hover {
 	background: #46A358;
 	color: white;
+}
+
+.product-thumb-swiper .swiper-slide {
+	border: 1px solid transparent;
+	width: calc(100px - 2px);
+	transition: all .2s linear;
+}
+
+.product-thumb-swiper .swiper-slide-thumb-active {
+	border-color: #46A358;
+	box-sizing: border-box;
+	border-radius: 0;
 }

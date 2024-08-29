@@ -198,3 +198,20 @@ try {
 } catch (error) {
 
 }
+
+var productThumbSwiper = new Swiper(".product-thumb-swiper", {
+	spaceBetween: 16,
+	slidesPerView: 4,
+	direction: 'vertical',
+});
+var productMainSwiper = new Swiper(".product-main-swiper", {
+	spaceBetween: 8,
+	thumbs: {
+		swiper: productThumbSwiper,
+	},
+	speed: 500,
+});
+try {
+} catch (error) {
+
+}
