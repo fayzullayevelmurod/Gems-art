@@ -1,13 +1,3 @@
-// var swiper = new Swiper(".mySwiper", {
-// 	spaceBetween: 8,
-// 	slidesPerView: 5,
-// 	navigation: {
-// 		nextEl: '.swiper-next',
-// 		prevEl: '.swiper-prev',
-// 	},
-// });
-
-
 var swiper = new Swiper(".mySwiper", {
 	spaceBetween: 8,
 	slidesPerView: 5,
@@ -41,6 +31,16 @@ var homeSwiper = new Swiper(".home-swiper", {
 		clickable: true,
 	},
 	speed: 1000,
+});
+
+// releted-swiper
+var reletedSwiper = new Swiper(".releted-swiper", {
+	spaceBetween: 26,
+	slidesPerView: 5,
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
 });
 
 try {
@@ -149,26 +149,52 @@ try {
 }
 
 // Custom select functionality
-const selectBtn = document.getElementById('selectBtn');
-const selectedOption = document.getElementById('selectedOption');
-const selectOptions = document.getElementById('selectOptions');
+try {
+	const selectBtn = document.getElementById('selectBtn');
+	const selectedOption = document.getElementById('selectedOption');
+	const selectOptions = document.getElementById('selectOptions');
 
-// Toggle options visibility
-selectBtn.addEventListener('click', () => {
-	selectOptions.classList.toggle('hidden');
-});
+	// Toggle options visibility
+	selectBtn.addEventListener('click', () => {
+		selectOptions.classList.toggle('hidden');
+	});
 
-// Handle option selection
-selectOptions.addEventListener('click', (e) => {
-	if (e.target.tagName === 'LI') {
-		selectedOption.textContent = e.target.textContent;
-		selectOptions.classList.add('hidden');
-	}
-});
+	// Handle option selection
+	selectOptions.addEventListener('click', (e) => {
+		if (e.target.tagName === 'LI') {
+			selectedOption.textContent = e.target.textContent;
+			selectOptions.classList.add('hidden');
+		}
+	});
 
-// Close options when clicking outside
-document.addEventListener('click', (e) => {
-	if (!selectBtn.contains(e.target) && !selectOptions.contains(e.target)) {
-		selectOptions.classList.add('hidden');
-	}
-});
+	// Close options when clicking outside
+	document.addEventListener('click', (e) => {
+		if (!selectBtn.contains(e.target) && !selectOptions.contains(e.target)) {
+			selectOptions.classList.add('hidden');
+		}
+	});
+} catch (error) {
+
+}
+
+
+try {
+	document.addEventListener('DOMContentLoaded', function () {
+		const tabItems = document.querySelectorAll('.tab-item');
+		const tabContents = document.querySelectorAll('.tab-content');
+
+		tabItems.forEach(item => {
+			item.addEventListener('click', function () {
+				const tabId = this.getAttribute('data-tab');
+
+				tabItems.forEach(tab => tab.classList.remove('active'));
+				tabContents.forEach(content => content.classList.add('hidden'));
+
+				this.classList.add('active');
+				document.getElementById(tabId).classList.remove('hidden');
+			});
+		});
+	});
+} catch (error) {
+
+}
