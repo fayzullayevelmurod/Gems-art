@@ -34,3 +34,82 @@ body {
 main .container {
 	@apply min-h-[calc(100vh-205px)] h-full;
 }
+
+/* home page */
+.main-container {
+	@apply max-w-[1200px] mx-auto;
+}
+
+.home-page {
+	background: white;
+	@apply font-Cera-Pro;
+}
+
+.primary-btn {
+	@apply font-Cera-Pro text-base font-bold leading-5 bg-deep-ocean rounded-md text-white py-[11px] px-7 block w-fit text-center border border-deep-ocean hover:bg-transparent hover:text-deep-ocean transition-all duration-300;
+}
+
+.swiper-pagination-bullet {
+	@apply bg-[#46A358] w-2 h-2;
+}
+
+.home-page .sidebars {
+	display: grid;
+	grid-template-columns: 1fr 840px;
+	gap: 50px;
+}
+
+.sliders_control {
+	position: relative;
+	min-height: 15px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	pointer-events: all;
+	width: 24px;
+	height: 24px;
+	background-color: #003D77;
+	border-radius: 50%;
+	border: 3px solid #fff;
+	cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+	-webkit-appearance: none;
+	pointer-events: all;
+	width: 24px;
+	height: 24px;
+	background-color: #46A35833;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+
+
+input[type="range"] {
+	-webkit-appearance: none;
+	appearance: none;
+	height: 3px;
+	width: 100%;
+	position: absolute;
+	background-color: #46A35833;
+	pointer-events: none;
+	border-radius: 10px;
+}
+
+#fromSlider {
+	height: 0;
+	z-index: 1;
+}
+
+.home-page .products {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(258px, 1fr));
+	column-gap: 33px;
+	row-gap: 70px;
+	margin-top: 31px;
+}
+.home-page .cart-btn:hover path {
+	fill: #46A358;
+}
