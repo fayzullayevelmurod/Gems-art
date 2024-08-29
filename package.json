@@ -5,7 +5,7 @@
   "main": "tailwind.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tailwindcss -i ./src/css/main.css -o ./src/css/global.css --watch"
+    "dev": "tailwindcss -i ./dist/css/main.css -o ./dist/css/global.css --watch"
   },
   "author": "",
   "license": "ISC"

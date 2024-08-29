@@ -11,12 +11,7 @@
 }
 
 body {
-	background: url(../images/bg.png) no-repeat, #003D77;
-	background-size: cover;
-	min-height: 100vh;
-	@apply font-Candara;
-	min-width: 1920px;
-	height: 100%;
+	@apply bg-[url('../images/bg.png')] bg-no-repeat bg-cover bg-[#003D77] min-h-screen font-['Candara'] min-w-[1920px] h-full;
 }
 
 .container {
@@ -27,15 +22,15 @@ body {
 	opacity: 0.5;
 }
 
-.swiper-slide {
-	opacity: .5;
+.mySwiper .swiper-slide {
+	@apply cursor-pointer opacity-[.5];
 }
 
-.swiper-slide-active {
+.mySwiper .swiper-slide-thumb-active {
 	opacity: 1;
+	@apply opacity-100
 }
 
 main .container {
-	min-height: calc(100vh - 205px);
-	height: 100%;
+	@apply min-h-[calc(100vh-205px)] h-full;
 }
